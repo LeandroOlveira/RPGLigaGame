@@ -88,7 +88,7 @@ public class ControlarPartida {
 	
 	public String atacarMaq(){
 		//metodo atacar usado pela maquina
-		int reducao,index = -1,atacado, naoPode;
+		int reducao,index = -1,atacado;
 		String retorno = "";
 		boolean escolheAcao = util.getRandomBool(); // escolhe aleatoriamente se a acao a ser realizada vai ser atacar ou restaurar vida
 		index = util.getRandomInt(tamanhoMaq);  //escolhe o personagem que vai atacar

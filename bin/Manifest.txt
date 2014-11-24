@@ -1,4 +1,0 @@
-Main-Class : visao.inicio
-Name : visa/inicio.class
-Java-Bean : true
-
