@@ -5,7 +5,7 @@ import java.util.List;
 import com.rpg.entidades.*;
 import com.rpg.enums.Nomes;
 import com.rpg.utilitarios.Utilitarios;
-import com.rpg.visao.CriarEquipe;
+
 
 public class ControlarEquipe {
 	
