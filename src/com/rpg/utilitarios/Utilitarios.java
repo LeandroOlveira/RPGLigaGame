@@ -2,7 +2,7 @@ package com.rpg.utilitarios;
 
 import java.util.*;
 
-
+import com.rpg.entidades.*;
 public class Utilitarios {
 
 	public boolean getRandomBool(){
