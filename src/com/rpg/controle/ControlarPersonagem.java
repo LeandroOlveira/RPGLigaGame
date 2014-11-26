@@ -3,15 +3,15 @@ package com.rpg.controle;
 import com.rpg.entidades.*;
 import com.rpg.enums.Nomes;
 
-public class ControlarPersonagem{
-	public Personagem retornaPersonagem(Nomes nome){
-		//retorna um novo objeto conforme o nome que vem de entrada
-		switch (nome) {	
+public class ControlarPersonagem {
+	public Personagem retornaPersonagem(Nomes nome) {
+		// retorna um novo objeto conforme o nome que vem de entrada
+		switch (nome) {
 		case AQUAMAN:
 			return new AquaMan();
 		case BATMAN:
 			return new Batman();
-		case CORINGA :
+		case CORINGA:
 			return new Coringa();
 		case FLASH:
 			return new Flash();
@@ -36,15 +36,16 @@ public class ControlarPersonagem{
 			return null;
 		}
 	}
-	
-	public String chamaCarrega(Protagonista carrega, Personagem recebe){
-		//chama o metodo restaurar vida da classe protagonista
+
+	public String chamaCarrega(Protagonista carrega, Personagem recebe) {
+		// chama o metodo restaurar vida da classe protagonista
 		String retorno = carrega.restaurarVida(carrega, recebe);
 		return retorno;
 	}
-	
-	public String retornaUrl(Personagem personagem){
-		//retorna o url da imagem que esta no pacote images conforme o nome do personagem do parametro
+
+	public String retornaUrl(Personagem personagem) {
+		// retorna o url da imagem que esta no pacote images conforme o nome do
+		// personagem do parametro
 		String nome = personagem.getNome();
 		String url = "";
 		switch (nome) {
@@ -57,7 +58,7 @@ public class ControlarPersonagem{
 		case "Coringa":
 			url = "/coringa.jpg";
 			return url;
-		case"Flash" :
+		case "Flash":
 			url = "/flash100x100.jpg";
 			return url;
 		case "Giganta":
